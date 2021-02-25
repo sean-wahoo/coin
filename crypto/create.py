@@ -50,7 +50,7 @@ class BlockChain:
         self.chain.append(block)
         return block
 
-        #constructs a new block and adds it to the chain
+        # constructs a new block and adds it to the chain
 
     @staticmethod
     def check_validity(block, prev_block):
