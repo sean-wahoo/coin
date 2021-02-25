@@ -1,6 +1,10 @@
 import hashlib
 import time
 
+
+# very basic crypto creation file
+
+
 class Block:
 
     def __init__(self, index, proof_no, prev_hash, data, timestamp = None):
