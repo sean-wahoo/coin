@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../node_modules/@fortawesome/fontawesome-svg-core/styles";
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:900&display=swap");
+
+#register_text {
+    color: transparent;
+    font-family: "Red Hat Display", sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -moz-text-stroke-width: 2px;
+    text-shadow: 6px 6px #3de58b;
+    -webkit-text-stroke-color: #0d1b1e;
+    -moz-text-stroke-color: #0d1b1e;
+}
+
+@media only screen and (max-width: 767px) {
+    #register_text {
+        color: transparent;
+        font-family: "Red Hat Display", sans-serif;
+        -webkit-text-stroke-width: 2px;
+        -moz-text-stroke-width: 2px;
+        text-shadow: 4px 4px #3de58b;
+        -webkit-text-stroke-color: #0d1b1e;
+        -moz-text-stroke-color: #0d1b1e;
+    }
+}
+
+@keyframes dropdownSlideInFromTop {
+    from {
+        transform: translateY(-5%);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
+}
+
+div#dropdown {
+    animation: dropdownSlideInFromTop 0.05s linear forwards;
+}
